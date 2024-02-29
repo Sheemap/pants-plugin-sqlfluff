@@ -1,0 +1,7 @@
+{
+    "extraPaths": [
+        "src/python"
+    ],
+    "venvPath": "dist/export/python/virtualenvs/python-default",
+    "venv": "3.11.7"
+}
