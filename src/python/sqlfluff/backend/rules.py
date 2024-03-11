@@ -2,10 +2,10 @@ from typing import cast
 
 from pants.backend.python.subsystems.setup import PythonSetup
 from pants.backend.python.util_rules import pex
-from pants.backend.python.util_rules.interpreter_constraints import \
-    InterpreterConstraints
-from pants.backend.python.util_rules.pex import (PexRequest, VenvPex,
-                                                 VenvPexProcess)
+from pants.backend.python.util_rules.interpreter_constraints import (
+    InterpreterConstraints,
+)
+from pants.backend.python.util_rules.pex import PexRequest, VenvPex, VenvPexProcess
 from pants.core.goals.fmt import FmtResult, FmtTargetsRequest
 from pants.core.util_rules.partitions import Partition, Partitions
 from pants.engine.fs import Digest, MergeDigests

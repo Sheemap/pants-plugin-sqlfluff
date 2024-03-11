@@ -9,7 +9,8 @@ backend_packages = [
     "pants.backend.python.lint.docformatter",
     "pants.backend.python.lint.bandit",
     "pants.backend.python.typecheck.mypy",
-    "pants.backend.python.lint.isort",
+    # if this is enabled, both black and isort break??
+    #"pants.backend.python.lint.isort"
     "sqlfluff",
 ]
 pythonpath = ["src/python"]

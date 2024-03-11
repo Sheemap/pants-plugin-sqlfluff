@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 
 from pants.backend.python.subsystems.python_tool_base import PythonToolBase
-from pants.backend.python.target_types import (ConsoleScript,
-                                               InterpreterConstraintsField)
+from pants.backend.python.target_types import ConsoleScript, InterpreterConstraintsField
 from pants.engine.rules import collect_rules
 from pants.engine.target import FieldSet
 from pants.option.option_types import ArgsListOption, SkipOption

@@ -1,7 +1,11 @@
 from typing import ClassVar
 
-from pants.engine.target import (COMMON_TARGET_FIELDS, SingleSourceField,
-                                 StringField, Target)
+from pants.engine.target import (
+    COMMON_TARGET_FIELDS,
+    SingleSourceField,
+    StringField,
+    Target,
+)
 
 
 class SqlSourceField(SingleSourceField):
