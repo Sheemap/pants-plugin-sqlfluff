@@ -11,7 +11,9 @@ backend_packages = [
     "pants.backend.python.typecheck.mypy",
     # if this is enabled, both black and isort break??
     #"pants.backend.python.lint.isort"
-    "sqlfluff",
+    "pants.backend.experimental.openapi",
+    "experimental.datamodel_code_generator",
+    #"sqlfluff",
 ]
 pythonpath = ["src/python"]
 
