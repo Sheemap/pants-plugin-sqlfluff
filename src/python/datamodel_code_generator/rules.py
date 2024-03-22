@@ -25,7 +25,7 @@ class GeneratePythonFromOpenApiRequest(GenerateSourcesRequest):
 @rule(desc="Generate Python from Data Model", level=LogLevel.WARN)
 async def codegen(request: GeneratePythonFromOpenApiRequest, codegen: DataModelCodeGen) -> GeneratedSources:
     source_name, _ = splitext(request.protocol_sources.files[0])
-    source_dir = ".".join(source_name.split("/")[:-1])
+    source_dir = "/".join(source_name.split("/")[:-1])
 
     output_name = "datamodel-codegen/" + source_name
     output_dir = "datamodel-codegen/" + source_dir
