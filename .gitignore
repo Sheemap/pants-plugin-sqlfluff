@@ -2,3 +2,4 @@
 .pids
 dist
 __pycache__
+src/python/pants

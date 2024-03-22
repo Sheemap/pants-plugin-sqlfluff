@@ -12,10 +12,12 @@ backend_packages = [
     # if this is enabled, both black and isort break??
     #"pants.backend.python.lint.isort"
     "pants.backend.experimental.openapi",
-    "experimental.datamodel_code_generator",
+    "datamodel_code_generator",
     #"sqlfluff",
 ]
 pythonpath = ["src/python"]
+pants_ignore = ["src/python/pants"]
+build_ignore = ["src/python/pants"]
 
 
 [python]
